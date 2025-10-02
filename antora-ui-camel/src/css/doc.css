@@ -628,9 +628,10 @@
   top: 0.25rem;
   right: 0.5rem;
   color: var(--pre-annotation-font-color);
-  font-family: var(--body-font-family);
-  font-size: calc(13 / var(--rem-base) * 1rem);
-  line-height: 1;
+  font-family: var(--monospace-font-family);
+  font-size: calc(15 / var(--rem-base) * 1rem);
+  font-weight: var(--monospace-font-weight-bold);
+  line-height: 1.2;
   user-select: none;
   white-space: nowrap;
   z-index: 1;
@@ -642,7 +643,6 @@
 
 .doc .source-toolbox .source-lang {
   text-transform: uppercase;
-  letter-spacing: 0.075em;
 }
 
 .doc .source-toolbox > :not(:last-child)::after {
