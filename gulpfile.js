@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const htmlmin = require('gulp-htmlmin');
 const inject = require('gulp-inject');
 const generateMarkdown = require('./gulp/tasks/generate-markdown');
+const generateAsciiDoc = require('./gulp/tasks/generate-asciidoc');
 
 /**
  * We minify all HTML files using htmlmin, this is to make them smaller in size
@@ -116,6 +117,9 @@ function versionlessRedirects (text) {
 
 // Register the generate-markdown task
 gulp.task('generate-markdown', generateMarkdown);
+
+// Register the generate-asciidoc task
+gulp.task('generate-asciidoc', generateAsciiDoc);
 
 /*
  * Removes the content from the `public` directory.
